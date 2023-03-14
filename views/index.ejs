@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Nutes</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Pesquiser por CPF" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-info"></i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Painel de informações
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Usuario para volta</h4>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Paciente sem consulta</h4>
+                
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Consulta agendada</h4>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+  <!-- 
+
+
+
+
+
+
+-->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header>
+
+  <!-- ======= Menu Lateral - Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Solicitações e Filtros</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Graficos</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Ex.01</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Ex.02</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Ex.03</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Ex.04</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+   
+    </ul>
+
+  </aside>
+
+
+  <!-- Novas Solicitações -->
+  <main id="main" class="main" >
+
+    <div class="pagetitle card">
+      <h1>Solicitações de consulta</h1>
+      <nav>
+        <ol class="container-sub_navbar">
+          <li class="container-sub_navebar-item"><a href="index.html">Novas Solicitações</a></li>
+          <p>/</p>
+          <a class="container-sub_navebar-item active" href="new_filter.html">Criar novo filtro</a>
+          <!-- <button onclick="paciente.adicionar()" >Adicionar Solicitações</button> -->
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section container-novas_solicitações">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+            <!-- Customers Card -->
+            <div class=" col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <!-- Filtros -->
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-filter"></i></a>
+                      
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                      <li class="dropdown-header">
+                        Filtros Ativos:
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+
+                      <li class="notification-item">
+                        <div>
+                          <h4 >Nome</h4>
+                        </div>
+                      </li>
+
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+
+                      <li class="notification-item">
+                        <div>
+                          <h4>CPF</h4>
+                        </div>
+                      </li>
+
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+
+                        <div>
+                          <h4>Outro</h4>
+                        </div>
+                      </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card-body col-xl-12">
+                  <h5 class="card-title col-xl-12">Novas Solicitações</h5>
+                  <table>
+                    <thead>
+                      <th class="col-1">Consulta</th>
+                      <th class="col-2">Nome</th>
+                      <th class="col-1">idade</th>
+                      <th class="col-2">Prontuário</th>
+                      <th class="col-2">CPF</th>
+                      <th class="col-2">Especialidade</th>
+                      <th class="col-2">Contato</th>
+                      <th>Data</th>
+                    </thead>
+                    <% pacientes.forEach(pacientes => { %>
+                    <tbody>
+                      <tr>  
+                        <td><i class="bi bi-check-circle text-success col-1"></i></td>
+                        <td><%= pacientes.nome %></td>
+                        <td><%= pacientes.idade %></td>
+                        <td><%= pacientes.prontuario %></td>
+                        <td><%= pacientes.cpf %></td>
+                        <td><%= pacientes.risco %></td>
+                        <td><%= pacientes.contato %></td>
+                        <td>09/03/2023</td>
+                      <!-- --> <td><i class="bi bi-calendar-plus" onclick="exibirJanela()"></i></td>
+                      </tr>
+                      
+                    </tbody>
+                    <% }) %>
+
+                  </table>  
+                  <!-- BOX CONSULTA <div id="overlay" class="header-overlay">
+                    <i class="bi bi-x" onclick="close_overlay()"></i>
+                    <div class="row">
+                      <div class="col-md-6 container-1_overlay">
+                        <h1 id="p_nome-overlay" >{{nome}}</h1>
+                        <h6 id="p_cpf-overlay" >CPF: </h6>
+                          <div class="container-row">
+                            <h6 id="p_idade-overlay">Idade :</h6>
+                            <h6 id="p_sexo-overlay" class="margin-left50px">Sexo :</h6>
+                          </div>
+                          <div class="container-row">
+                            <h6 id="p_number" ><i class="bi bi-telephone"> Número do Telefone</i></h6>
+                            <h6 id="p_email" class="margin-left50px" ><i class="bi bi-envelope margin-left50px"> Email do paciente</i></h6>
+                          </div>
+                      </div>
+                      <div class="col-md-3 container-2_overlay">
+                        <h5>Prontuário N:</h5>
+                        <h6 id="p_prontuario" >92202029</h6>
+                      </div>
+                      <div class="col-md-3 container-3_overlay">
+                        <h5>Número do Prontuário</h5>
+                        <button type="button">Marcar Consulta</button>
+                      </div>
+                        <div class="col-md-12 linha"></div>
+                    </div>-->
+                    <!-- <div class="row">
+                      <div class="col-md-6 container-1_overlay">
+                        <h1 id="p_nome-overlay" >Maria Josefa Domingos da Silva </h1>
+                        <h6 id="p_cpf-overlay" >CPF: </h6>
+                          <div class="container-row">
+                            <h6 id="p_idade-overlay">Idade :</h6>
+                            <h6 id="p_sexo-overlay" class="margin-left50px">Sexo :</h6>
+                          </div>
+                          <div class="container-row">
+                            <h6 id="p_number" ><i class="bi bi-telephone"> Número do Telefone</i></h6>
+                            <h6 id="p_email" class="margin-left50px" ><i class="bi bi-envelope margin-left50px"> Email do paciente</i></h6>
+                          </div>
+                      </div>
+                      <div class="col-md-3 container-2_overlay">
+                        <h5>Prontuário N:</h5>
+                        <h6 id="p_prontuario" >92202029</h6>
+                      </div>
+                      <div class="col-md-3 container-3_overlay">
+                        <h5>Número do Prontuário</h5>
+                        <button type="button">Marcar Consulta</button>
+                      </div>
+                        <div class="col-md-12 linha"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 container-1_overlay">
+                        <h1 id="p_nome-overlay" >Maria Josefa Domingos da Silva </h1>
+                        <h6 id="p_cpf-overlay" >CPF: </h6>
+                          <div class="container-row">
+                            <h6 id="p_idade-overlay">Idade :</h6>
+                            <h6 id="p_sexo-overlay" class="margin-left50px">Sexo :</h6>
+                          </div>
+                          <div class="container-row">
+                            <h6 id="p_number" ><i class="bi bi-telephone"> Número do Telefone</i></h6>
+                            <h6 id="p_email" class="margin-left50px" ><i class="bi bi-envelope margin-left50px"> Email do paciente</i></h6>
+                          </div>
+                      </div>
+                      <div class="col-md-3 container-2_overlay">
+                        <h5>Prontuário N:h2 </h5>
+                        <h6 id="p_prontuario" >92202029</h6>
+                      </div>
+                      <div class="col-md-3 container-3_overlay">
+                        <h5>Número do Prontuário</h5>
+                        <button type="button">Marcar Consulta</button>
+                      </div>
+                        <div class="col-md-12 linha"></div>
+                    </div> -->
+                  
+                  
+                </div>
+              </div>
+
+            </div>
+           
+          </div>
+        </div>
+
+     
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NUTES</span></strong>. <br> Todos os direitos reservados.
+    </div>
+    <div class="credits">
+      Desenvolvido durante : <a href="#">Projeto de Extensão Técnologica</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
